@@ -7,3 +7,16 @@ Repositório para o **Sistema Home Supplies** para a Disciplina Teste de Softwar
 # Documentação
 
 [Documento de Visão](docs/doc-visao.md)
+
+# Configuração do Ambiente de Desenvolvimento
+
+Part 3: PostgreSQL and TypeORM
+
+Install PostgreSQL and TypeORM
+
+```bash
+npm install typeorm reflect-metadata --save
+npm install pg --save
+```
+
+Setup Postgres database server
