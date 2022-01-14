@@ -1,4 +1,4 @@
-import PingController from "../../src/controllers/ping.controller";
+import PingController from "../../../src/controllers/ping.controller";
 
 test("it should pass", async () => {
     expect(true).toBe(true);

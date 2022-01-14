@@ -5,6 +5,7 @@ module.exports = {
   moduleNameMapper: {
     "tests/(.*)": "<rootDir>/tests/$1",
   },
+  moduleFileExtensions: ["js", "ts"],
   collectCoverage: true,
   collectCoverageFrom: ["src/**/*.{js,ts}"],
   coverageReporters: [
