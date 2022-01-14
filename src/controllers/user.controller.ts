@@ -1,4 +1,4 @@
-import { Get, Route, Tags, Post, Body, Path } from "tsoa";
+import { Get, Route, Tags, Post, Body, Path, Delete } from "tsoa";
 import { User } from "../models";
 import { UserService, IUserPayload } from "../services/user";
 
@@ -21,5 +21,10 @@ export default class UserController {
   @Get("/:id")
   public async getUser(@Path() id: string): Promise<User | null> {
     return this.service.getUser(Number(id));
+  }
+
+  @Delete("/:id")
+  public async deleteUser(id: number) {
+    return this.service.deleteUser(id);
   }
 }

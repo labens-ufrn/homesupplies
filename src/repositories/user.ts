@@ -17,3 +17,8 @@ export const getUser = async (id: number): Promise<User | null> => {
   if (!user) return null;
   return user;
 };
+
+export const deleteUser = async (id: number): Promise<void> => {
+    const userRepository = getRepository(User);
+    await userRepository.delete({ id: id });
+};

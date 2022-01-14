@@ -3,6 +3,7 @@ import {
     getUsers,
     createUser,
     getUser,
+    deleteUser,
 } from "../repositories/user";
 
 export interface IUserPayload {
@@ -27,5 +28,9 @@ export class UserService {
 
     public async getUser(id: number): Promise<User | null> {
         return getUser(id);
+    }
+
+    public async deleteUser(id: number): Promise<void> {
+        return deleteUser(id);
     }
 }
