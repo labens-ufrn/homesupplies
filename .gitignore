@@ -107,3 +107,5 @@ package-lock.json
 build/
 public/
 public/swagger.json
+.scannerwork/.sonar_lock
+.scannerwork/report-task.txt
