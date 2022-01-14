@@ -20,3 +20,30 @@ npm install pg --save
 ```
 
 Setup Postgres database server
+
+# Setup Jest
+
+```bash
+npm i -D jest @types/jest
+npm i -D ts-jest
+npx ts-jest config:init
+npm i -D faker @types/faker
+```
+
+Add `test` script in `package.json`. In test script call the `jest` command.
+
+`package.json`
+```json
+  "scripts": {
+    ...
+    "test": "jest"
+  },
+```
+
+Para gerar os relatórios de cobertura execute o comando:
+
+```console
+npm run test --coverage
+```
+
+O relatório estará no diretório `covarage/` chamado de `lcov.info` (local padrão se você não tiver modificado).
