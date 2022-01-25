@@ -24,7 +24,7 @@ jobs:
 
     - name: Testando com Jest
       run: |
-        npm i -D jest @types/jest
+        npm install
         npm run test
       
     - name: Build
